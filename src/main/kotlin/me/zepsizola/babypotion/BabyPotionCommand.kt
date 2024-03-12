@@ -1,4 +1,4 @@
-package me.rime.babypotion
+package me.zepsizola.babypotion
 
 import net.kyori.adventure.text.format.TextDecoration
 import net.kyori.adventure.text.minimessage.MiniMessage

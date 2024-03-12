@@ -1,6 +1,6 @@
 name: BabyPotion
 version: '${version}'
-main: me.rime.babypotion.BabyPotion
+main: me.zepsizola.babypotion.BabyPotion
 api-version: '1.20'
 author: Rime
 description: A plugin that turns any mob to their baby counterpart when babypotions are splashed on them.

@@ -1,4 +1,4 @@
-package me.rime.babypotion
+package me.zepsizola.babypotion
 
 import org.bukkit.event.entity.PotionSplashEvent
 import org.bukkit.plugin.java.JavaPlugin

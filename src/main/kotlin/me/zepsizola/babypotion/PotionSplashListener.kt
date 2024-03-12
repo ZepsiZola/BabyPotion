@@ -1,14 +1,12 @@
-package me.rime.babypotion
+package me.zepsizola.babypotion
 
-import me.rime.babypotion.BabyPotion.Companion.INSTANCE
+import me.zepsizola.babypotion.BabyPotion.Companion.INSTANCE
 import org.bukkit.NamespacedKey
 import org.bukkit.entity.Ageable
 import org.bukkit.entity.Breedable
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.entity.Player
-import org.bukkit.entity.Entity
-import java.util.UUID
 import org.bukkit.event.entity.PotionSplashEvent
 import me.ryanhamshire.GriefPrevention.Claim
 import me.ryanhamshire.GriefPrevention.ClaimPermission
