@@ -1,0 +1,22 @@
+# Gradle
+.gradle/
+gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Local configuration
+local.properties
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
