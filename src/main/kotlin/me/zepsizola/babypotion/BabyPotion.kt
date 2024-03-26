@@ -8,10 +8,12 @@ class BabyPotion : JavaPlugin() {
 		INSTANCE = this
 		server.pluginManager.registerEvents(PotionSplashListener(), this)
 		getCommand("babypotion")?.setExecutor(BabyPotionCommand())
+		logger.info("BabyPotion has enabled!")
 	}
 
 	override fun onDisable() {
 		PotionSplashEvent.getHandlerList().unregister(this)
+		logger.info("BabyPotion has disabled.")
 	}
 
 	companion object {
