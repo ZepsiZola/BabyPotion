@@ -14,6 +14,7 @@ import me.ryanhamshire.GriefPrevention.GriefPrevention
 import me.ryanhamshire.GriefPrevention.TextMode
 import me.ryanhamshire.GriefPrevention.Messages
 import org.bukkit.ChatColor
+import org.bukkit.entity.Tameable
 
 class PotionSplashListener : Listener {
 
@@ -27,6 +28,12 @@ class PotionSplashListener : Listener {
 		if (shooter !is Player) return
 
 		event.affectedEntities.filterIsInstance<Ageable>().forEach { entity ->
+			// Check if the entity is a pet and if its owner is not the shooter
+			if (entity is Tameable && entity.isTamed && entity.owner?.uniqueId != shooter.uniqueId) {
+				shooter.sendMessage("${ChatColor.RED}You cannot use the baby potion on pets that do not belong to you!")
+				return@forEach
+			}
+
 			val claim = GriefPrevention.instance.dataStore.getClaimAt(entity.location, false, null)
 
 			// If no claim is found, or if the player has Build or Edit permissions, or is the owner
