@@ -47,8 +47,10 @@ class PotionSplashListener: Listener {
 
 			// If no claim is found, or if the player has Build or Edit permissions, or is the owner
 			if (claim == null || shooter.hasClaimPermission(claim)) {
-				entity.setBaby()
-				(entity as? Breedable)?.ageLock = true
+				//INSTANCE.server.regionScheduler.runAt(entity.location) {
+					entity.setBaby()
+					(entity as? Breedable)?.ageLock = true
+				//}
 			}else{
 				GriefPrevention.sendMessage(shooter, ChatColor.RED, Messages.NoDamageClaimedEntity, claim.getOwnerName())
 			}

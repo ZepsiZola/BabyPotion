@@ -13,7 +13,7 @@ class BabyPotion : JavaPlugin() {
 
 	override fun onDisable() {
 		PotionSplashEvent.getHandlerList().unregister(this)
-		logger.info("BabyPotion has disabled.")
+		logger.info("BabyPotion has enabled!")
 	}
 
 	companion object {

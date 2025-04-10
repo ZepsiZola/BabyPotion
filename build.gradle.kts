@@ -15,6 +15,7 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:${project.property("paper_version")}")
+    //compileOnly("io.papermc.folia:folia-api:${project.property("paper_version")}")
     implementation(kotlin("stdlib-jdk8"))
     compileOnly("com.github.TechFortress:GriefPrevention:17.0.0") //GriefPrevention Dependency
 }

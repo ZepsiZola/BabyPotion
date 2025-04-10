@@ -1,10 +1,11 @@
 name: BabyPotion
 version: '${version}'
 main: me.zepsizola.babypotion.BabyPotion
-api-version: '1.20'
+api-version: '1.21'
 author: Zepsi_Zola_
 description: A plugin that turns any mob to their baby counterpart when babypotions are splashed on them.
 depend: [GriefPrevention]
+folia-supported: true
 commands:
   babypotion:
     description: Gives the user a babypotion.
