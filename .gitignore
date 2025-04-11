@@ -1,6 +1,5 @@
 # Gradle
 .gradle/
-gradle/
 build/
 
 # IntelliJ IDEA
@@ -44,3 +43,6 @@ hs_err_pid*
 replay_pid*
 /bin/
 /.vscode/
+
+# Specifically my stuff
+deploy.sh
