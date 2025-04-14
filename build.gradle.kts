@@ -4,8 +4,8 @@ plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
-group = "me.rime"
-version = project.property("version").toString()
+group = "me.zepsizola"
+version = "1.0"
 repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
@@ -16,7 +16,7 @@ repositories {
 dependencies {
     compileOnly("io.papermc.paper:paper-api:${project.property("paper_version")}")
     //compileOnly("io.papermc.folia:folia-api:${project.property("paper_version")}")
-    implementation(kotlin("stdlib-jdk8"))
+    implementation(kotlin("stdlib"))
     compileOnly("com.github.TechFortress:GriefPrevention:17.0.0") //GriefPrevention Dependency
 }
 
@@ -34,9 +34,6 @@ tasks {
         options.encoding = "UTF-8"
     }
     shadowJar {
-        project.configurations.implementation.get().isCanBeResolved = true
-        configurations = listOf(project.configurations.implementation.get())
-        archiveBaseName.set("BabyPotion")
         archiveClassifier.set("shaded")
         archiveVersion.set("")
         minimize()
